@@ -6,7 +6,7 @@
 /*   By: yebkim <marvin@42.fr>                      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/06/12 11:48:55 by yebkim            #+#    #+#             */
-/*   Updated: 2021/06/12 19:27:00 by yebkim           ###   ########.fr       */
+/*   Updated: 2021/06/23 19:10:16 by yebkim           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,8 @@ size_t		ft_strlcpy(char *restrict dst,
 {
 	size_t	i;
 
+	if (!dst || !src)
+		return (0);
 	if (!dstsize)
 		return (ft_strlen(src));
 	i = 0;
